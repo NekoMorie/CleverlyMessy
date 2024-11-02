@@ -9,10 +9,10 @@
     <meta name="description" content="Appku - Software Landing Page">
 
     <!-- ========== Page Title ========== -->
-    <title>Appku - Software Landing Page</title>
+    <title>CleverlyMessy - {{ $title }}</title>
 
     <!-- ========== Favicon Icon ========== -->
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('assets/img/favicon.png') }}" type="image/x-icon">
 
     <!-- ========== Start Stylesheet ========== -->
     <link href="{{ asset('vendor/template/css/bootstrap.min.css') }}" rel="stylesheet" />
@@ -48,9 +48,9 @@
 
     <!-- Header
     ============================================= -->
-    @include('profile.layout.navbar');
+    @include('profile.layout.navbar')
 
-    @yield('content');
+    @yield('content')
 
  <!-- Start Footer Bottom -->
  <div class="footer-bottom">

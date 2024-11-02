@@ -27,10 +27,10 @@
 
                 <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
                     <li>
-                        <a href="#" class="dropdown-toggle active" data-toggle="dropdown" >Home</a>
+                        <a href="/" class="dropdown-toggle active" data-toggle="dropdown" >Home</a>
                     </li>
                     <li>
-                        <a href="#about" class="dropdown-toggle active" data-toggle="dropdown" >Tentang Kami</a>
+                        <a href="/abo   ut" class="dropdown-toggle active" data-toggle="dropdown" >Tentang Kami</a>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Fitur</a>
@@ -47,7 +47,7 @@
                         <a href="#blog" class="dropdown-toggle" data-toggle="dropdown" >Blog</a>
                     </li>
                     <li>
-                        <a href="about-us.html" class="dropdown-toggle" data-toggle="dropdown" >Kontak</a>
+                        <a href="/contact" class="dropdown-toggle" data-toggle="dropdown" >Kontak</a>
                     </li>
                     <li>
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" >FAQ</a>
@@ -55,7 +55,7 @@
                     <li>
                         <div class="nav navbar-nav navbar-right attr-login ms-3">
                             <ul>
-                                <a class="text-white" href="contact.html">
+                                <a class="text-white" href="/admin">
                                     <li class="btn circle btn-primary login-button">Login</li>
                                 </a>
                             </ul>
@@ -70,7 +70,7 @@
                 <!-- Start Atribute Navigation -->
                 <div class="attr-nav">
                     <ul>
-                        <li class="button"><a href="contact.html">Login</a></li>
+                        <li class="button"><a href="/admin">Login</a></li>
                     </ul>
                 </div>
                 <!-- End Atribute Navigation -->

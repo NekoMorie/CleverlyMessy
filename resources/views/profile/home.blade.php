@@ -18,7 +18,7 @@
                         <a class="btn btn-md circle btn-gradient effect wow fadeInUp" data-wow-delay="700ms" href="#">Ayo Coba Sekarang! <i class="fas fa-angle-right"></i></a>
                     </div>
                     <div class="col-lg-6 thumb wow fadeInRight" data-wow-delay="900ms">
-                       <img src="assets/img/illustration/15.png" alt="Thumb">
+                       <img src="assets/img/fitur/hp.png" alt="Thumb">
                    </div>
 
 
@@ -39,7 +39,8 @@
                             <h2>Mengapa Kami Pilihan Terbaik?</h2>
                             <div class="devider"></div>
                             <p>
-                                Outlived no dwelling denoting in peculiar as he believed. Behaviour excellent middleton be as it curiosity departure ourselves very extreme future.
+                            Kami menawarkan produk dengan berbagai macam fitur yang menarik dan sangat bermanfaat, terutama dalam hal pencatatan
+                            kehadiran secara digital.
                             </p>
                         </div>
                     </div>
@@ -51,12 +52,13 @@
                     <div class="features-style-four col-lg-4 col-md-6">
                         <div class="feature-style-four-item">
                             <div class="icon">
-                                <img src="assets/img/icon/app/1.png" alt="Icon">
+                                <img src="{{ asset('assets/img/fitur/1.png') }}" alt="Icon">
                             </div>
                             <div class="info">
-                                <h4>Fully Secured</h4>
+                                <h4>Absensi Real-Time dengan Penyimpanan Otomatis</h4>
                                 <p>
-                                    Everything melancholy uncommonly but excellence an to impression. ladies she basket season age her uneasy saw.
+                                    Fitur ini memungkinkan pengguna untuk mencatat kehadiran
+                                    secara langsung dan menyimpan data absensi ke database secara real-time.
                                 </p>
                             </div>
                         </div>
@@ -66,12 +68,13 @@
                     <div class="features-style-four col-lg-4 col-md-6">
                         <div class="feature-style-four-item">
                             <div class="icon">
-                                <img src="assets/img/icon/app/2.png" alt="Icon">
+                                <img src="assets/img/fitur/2.png" alt="Icon">
                             </div>
                             <div class="info">
-                                <h4>Easy to Edit</h4>
+                                <h4>Absensi Mandiri dengan Verifikasi Foto Selfie</h4>
                                 <p>
-                                    Everything melancholy uncommonly but excellence an to impression. ladies she basket season age her uneasy saw.
+                                    Sistem ini menggunakan teknologi pengenalan wajah untuk memastikan
+                                    kehadiran pengguna sesuai dengan identitas yang terdaftar.
                                 </p>
                             </div>
                         </div>
@@ -81,12 +84,13 @@
                     <div class="features-style-four col-lg-4 col-md-6">
                         <div class="feature-style-four-item">
                             <div class="icon">
-                                <img src="assets/img/icon/app/3.png" alt="Icon">
+                                <img src="assets/img/fitur/3.png" alt="Icon">
                             </div>
                             <div class="info">
-                                <h4>Design & Branding</h4>
+                                <h4>Deteksi Lokasi untuk Verifikasi Absensi</h4>
                                 <p>
-                                    Everything melancholy uncommonly but excellence an to impression. ladies she basket season age her uneasy saw.
+                                    itur ini memanfaatkan deteksi lokasi untuk memastikan bahwa
+                                    absensi dilakukan di lokasi yang diizinkan atau di lokasi yang sesuai dengan kebijakan perusahaan.
                                 </p>
                             </div>
                         </div>
@@ -97,169 +101,6 @@
         </div>
     </section>
     <!-- End Features -->
-
-    <!-- Start Video
-    ============================================= -->
-    <div class="video-style-one-area text-light shadow dark video-bg-live bg-cover" style="background-image: url(assets/img/2440x1578.png);">
-        <div class="player bg-cover" data-property="{videoURL:'cAN0NI5IZ5c',containment:'.video-bg-live', showControls:false, autoPlay:true, zoom:0, loop:true, mute:true, startAt:0, opacity:1, quality: 'highres'}"></div>
-        <div class="video-content-info default-padding shadow dark">
-            <div class="container">
-                <div class="row align-center">
-                    <div class="col-lg-6 video-style-one-item">
-                        <h2>Creative New Apps for <br> IT, Retail, & Banking</h2>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid nostrum, aut, perspiciatis, iusto animi incidunt ab recusandae molestiae repellendus distinctio maxime ex architecto vero fuga iste pariatur alias vitae tempore.
-                        </p>
-                        <div class="fun-facto-box">
-                            <div class="fun-fact">
-                                <div class="counter">
-                                    <div class="timer" data-to="18" data-speed="2000">18</div>
-                                    <div class="operator">K</div>
-                                </div>
-                                <span class="medium">App Downloads</span>
-                            </div>
-                            <div class="fun-fact">
-                                <div class="counter">
-                                    <div class="timer" data-to="98" data-speed="2000">98</div>
-                                    <div class="operator">%</div>
-                                </div>
-                                <span class="medium">Positive Rating</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 video-style-one-item text-center">
-                        <a href="https://www.youtube.com/watch?v=owhuBrGIOsE" class="popup-youtube video-btn"><i class="fas fa-play"></i>Watch Promo</a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Video -->
-
-    <!-- Start App features
-    ============================================= -->
-    <div class="app-features-area default-padding">
-        <div class="container">
-            <div class="row align-center">
-                <div class="col-lg-3 text-end app-feature-style-one">
-                    <div class="app-feature-item">
-                        <h4>Manaement</h4>
-                        <p>
-                            Attention are had allowance own perceived abilities. Unfeeling are had allowance own perceived abilities.
-                        </p>
-                    </div>
-                    <div class="app-feature-item">
-                        <h4>Time Tracking</h4>
-                        <p>
-                            Business are had allowance own perceived abilities. Unfeeling are had allowance own perceived abilities.
-                        </p>
-                    </div>
-                    <div class="app-feature-item">
-                        <h4>Payment</h4>
-                        <p>
-                            Providing are had allowance own perceived abilities. Unfeeling are had allowance own perceived abilities.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-6 text-center app-feature-style-one">
-                    <div class="app-feature-item">
-                        <div class="app-feature-thumb">
-                            <img src="assets/img/illustration/17.png" alt="Thumb">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 app-feature-style-one">
-                    <div class="app-feature-item">
-                        <h4>Productivity</h4>
-                        <p>
-                            Attention are had allowance own perceived abilities. Unfeeling are had allowance own perceived abilities.
-                        </p>
-                    </div>
-                    <div class="app-feature-item">
-                        <h4>Time Tracking</h4>
-                        <p>
-                            Providing are had allowance own perceived abilities. Unfeeling are had allowance own perceived abilities.
-                        </p>
-                    </div>
-                    <div class="app-feature-item">
-                        <h4>Live Support</h4>
-                        <p>
-                            Business are had allowance own perceived abilities. Unfeeling are had allowance own perceived abilities.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End App Features -->
-
-    <!-- Start Screnshoot
-    ============================================= -->
-    <div id="screenshot" class="screenshot-area relative default-padding-bottom carousel-shadow">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="site-heading text-center">
-                        <h2>App Screnshoot</h2>
-                        <div class="devider"></div>
-                        <p>
-                            Outlived no dwelling denoting in peculiar as he believed. Behaviour excellent middleton be as it curiosity departure ourselves very extreme future.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-full">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="screenshot-carousel owl-carousel owl-theme">
-                        <!-- Single item -->
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/screenshot/1.png" alt="Thumb">
-                                <a href="assets/img/screenshot/1.png" class="item popup-gallery theme video-play-button">
-                                    <i class="fa fa-plus"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- End Single item -->
-                        <!-- Single item -->
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/screenshot/2.png" alt="Thumb">
-                                <a href="assets/img/screenshot/2.png" class="item popup-gallery theme video-play-button">
-                                    <i class="fa fa-plus"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- End Single item -->
-                        <!-- Single item -->
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/screenshot/3.png" alt="Thumb">
-                                <a href="assets/img/screenshot/3.png" class="item popup-gallery theme video-play-button">
-                                    <i class="fa fa-plus"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- End Single item -->
-                        <!-- Single item -->
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/screenshot/4.png" alt="Thumb">
-                                <a href="assets/img/screenshot/4.png" class="item popup-gallery theme video-play-button">
-                                    <i class="fa fa-plus"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- End Single item -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Screnshoot -->
 
     <!-- Start Team
     ============================================= -->
@@ -620,119 +461,6 @@
         </div>
     </section>
     <!-- End Pricing Area -->
-
-    <!-- Start Blog
-    ============================================= -->
-    <section id="blog">
-        <div id="blog" class="blog-area default-padding bottom-less">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 offset-lg-2">
-                        <div class="site-heading text-center">
-                            <h2>Latest News</h2>
-                            <div class="devider"></div>
-                            <p>
-                                Outlived no dwelling denoting in peculiar as he believed. Behaviour excellent middleton be as it curiosity departure ourselves very extreme future.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-
-                    <!-- Single item -->
-                    <div class="single-item col-lg-4 col-md-6">
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="blog-single-with-sidebar.html"><img src="assets/img/800x600.png" alt="Thumb"></a>
-                                <div class="date"><strong>18</strong> <span>Apr</span></div>
-                            </div>
-                            <div class="info">
-                                <div class="meta">
-                                    <ul>
-                                        <li>
-                                            <a href="#"><i class="fas fa-user-circle"></i> User</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fas fa-comments"></i> 26 Comments</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <h4>
-                                    <a href="blog-single-with-sidebar.html">Discovery earnestly public commanded mentions.</a>
-                                </h4>
-                                <p>
-                                    Possession ye no mr unaffected remarkably at. Wrote house in never fruit up. Pasture imagine my garrets.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single item -->
-
-                    <!-- Single item -->
-                    <div class="single-item col-lg-4 col-md-6">
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="blog-single-with-sidebar.html"><img src="assets/img/800x600.png" alt="Thumb"></a>
-                                <div class="date"><strong>25</strong> <span>Aug</span></div>
-                            </div>
-                            <div class="info">
-                                <div class="meta">
-                                    <ul>
-                                        <li>
-                                            <a href="#"><i class="fas fa-user-circle"></i> Admin</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fas fa-comments"></i> 35 Comments</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <h4>
-                                    <a href="blog-single-with-sidebar.html">Considered imprudence of he friendship boisterous.</a>
-                                </h4>
-                                <p>
-                                    Possession ye no mr unaffected remarkably at. Wrote house in never fruit up. Pasture imagine my garrets.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single item -->
-
-                    <!-- Single item -->
-                    <div class="single-item col-lg-4 col-md-6">
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="blog-single-with-sidebar.html"><img src="assets/img/800x600.png" alt="Thumb"></a>
-                                <div class="date"><strong>05</strong> <span>Jul</span></div>
-                            </div>
-                            <div class="info">
-                                <div class="meta">
-                                    <ul>
-                                        <li>
-                                            <a href="#"><i class="fas fa-user-circle"></i> user</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fas fa-comments"></i> 12 Comments</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <h4>
-                                    <a href="blog-single-with-sidebar.html">Overcame breeding or my concerns removing desirous.</a>
-                                </h4>
-                                <p>
-                                    Possession ye no mr unaffected remarkably at. Wrote house in never fruit up. Pasture imagine my garrets.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single item -->
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Blog -->
 
     <!-- Start Free Trial
     ============================================= -->

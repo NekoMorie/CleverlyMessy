@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\UsersController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,10 +17,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('profile/home');
-});
 
-Route::get('/about', function () {
-    return view('profile/about');
-});
+Route::get('/', [HomeController::class, 'index']) -> name('home');
+
+Route::get('/contact', [HomeController::class, 'contact']) -> name('contact');
+
+Route::get('/admin', [AdminController::class, 'index']) -> name('admin');
+
+Route::get('/admin/users', [AdminController::class, 'users']) -> name('users');
+
+Route::get('/admin/profile', [AdminController::class, 'profile']) -> name('profile');
