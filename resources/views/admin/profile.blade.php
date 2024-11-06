@@ -53,7 +53,7 @@
                   </div>
                 </div>
                 <div class="">
-                   <a href="javascript:;" class="btn btn-primary"><ion-icon name="send-sharp"></ion-icon>Send Message</a>
+                   <a href="{{ url('/admin/edit-profile') }}" class="btn btn-primary"><ion-icon name="pencil-sharp"></ion-icon>Edit Profile</a>
                 </div>
               </div>
             </div>

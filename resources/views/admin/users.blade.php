@@ -17,13 +17,24 @@
                <ol class="breadcrumb mb-0 p-0 align-items-center">
                  <li class="breadcrumb-item"><a href="javascript:;"><ion-icon name="people-outline"></ion-icon></a>
                  </li>
-                 <li class="breadcrumb-item active" aria-current="page">Users</li>
+                 <li class="breadcrumb-item active" aria-current="page">{{ $title }}</li>
                </ol>
              </nav>
            </div>
          </div>
          <!--end breadcrumb-->
 
+
+         <div class="card">
+          <div class="card-body">
+            <div class="d-flex align-item-center">
+                <div class="col-md-6 p-0">
+                    <button type="button" class="btn btn-primary px-3" data-bs-toggle="modal" data-bs-target="#tambahModal"><ion-icon name="duplicate-sharp"></ion-icon>Tambah</button>
+                    <button type="button" class="btn btn-success px-3" data-bs-toggle="modal" data-bs-target="#importModal"><ion-icon name="cloud-upload-sharp"></ion-icon></ion-icon>Import</button>
+                </div>
+            </div>
+          </div>
+         </div>
               <div class="card">
                 <div class="card-body">
                   <div class="d-flex align-items-center">
@@ -200,9 +211,74 @@
                 <div class="modal-body">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-danger">Delete</button>
                 </div>
               </div>
             </div>
           </div>
+
+          <div class="modal fade" id="importModal" tabindex="-1" role="dialog" aria-labelledby="importModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="importModalLabel">Import Users</h5>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form action="{{ url('/pegawai/import') }}" method="POST" enctype="multipart/form-data">
+                        <div class="modal-body">
+                            @csrf
+                            <div class="form-group">
+                                <label for="file_excel">File Excel</label>
+                                <input type="file" name="file_excel" id="file_excel" class="form-control @error('file_excel') is-invalid @enderror">
+                                @error('file_excel')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" type="button" data-bs-dismiss="modal">Close</button>
+                            <button class="btn btn-secondary" type="submit">Save changes</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="tambahModal" tabindex="-1" aria-labelledby="tambahModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="tambahModalLabel">Tambah Data User</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form id="userForm">
+                    <div class="mb-3">
+                      <label for="userName" class="form-label">Nama</label>
+                      <input type="text" class="form-control" id="userName" name="userName" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="userEmail" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="userEmail" name="userEmail" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="userPhone" class="form-label">Nomor Telepon</label>
+                      <input type="tel" class="form-control" id="userPhone" name="userPhone">
+                    </div>
+                    <div class="mb-3">
+                      <label for="userAddress" class="form-label">Alamat</label>
+                      <textarea class="form-control" id="userAddress" name="userAddress" rows="3"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                  <button type="submit" class="btn btn-primary" form="userForm">Simpan</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
 @endsection
