@@ -221,81 +221,91 @@
                     </a>
                   </div>
                 </li>
-                <li class="nav-item dropdown dropdown-user-setting">
-                  <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="javascript:;" data-bs-toggle="dropdown">
-                    <div class="user-setting">
-                      <img src="{{ url('assets/admin/images/avatars/06.png')}}" class="user-img" alt="">
-                    </div>
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-end">
-                    <li>
-                       <a class="dropdown-item" href="javascript:;">
-                         <div class="d-flex flex-row align-items-center gap-2">
-                            <img src="{{ url('assets/admin/images/avatars/06.png')}}" alt="" class="rounded-circle" width="54" height="54">
-                            <div class="">
-                              <h6 class="mb-0 dropdown-user-name">Jhon Deo</h6>
-                              <small class="mb-0 dropdown-user-designation text-secondary">UI Developer</small>
-                            </div>
-                         </div>
-                       </a>
-                     </li>
-                     <li><hr class="dropdown-divider"></li>
-                     <li>
-                        <a class="dropdown-item" href="javascript:;">
-                           <div class="d-flex align-items-center">
-                             <div class=""><ion-icon name="person-outline"></ion-icon></div>
-                             <div class="ms-3"><span>Profile</span></div>
-                           </div>
-                         </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="javascript:;">
-                           <div class="d-flex align-items-center">
-                             <div class=""><ion-icon name="settings-outline"></ion-icon></div>
-                             <div class="ms-3"><span>Setting</span></div>
-                           </div>
-                         </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="javascript:;">
-                           <div class="d-flex align-items-center">
-                             <div class=""><ion-icon name="speedometer-outline"></ion-icon></div>
-                             <div class="ms-3"><span>Dashboard</span></div>
-                           </div>
-                         </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="javascript:;">
-                           <div class="d-flex align-items-center">
-                             <div class=""><ion-icon name="wallet-outline"></ion-icon></div>
-                             <div class="ms-3"><span>Earnings</span></div>
-                           </div>
-                         </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="javascript:;">
-                           <div class="d-flex align-items-center">
-                             <div class=""><ion-icon name="cloud-download-outline"></ion-icon></div>
-                             <div class="ms-3"><span>Downloads</span></div>
-                           </div>
-                         </a>
-                      </li>
-                      @auth
-                        <li><hr class="dropdown-divider"></li>
-                        <li>
-                          <a class="dropdown-item" href="javascript:;">
-                            <form action="{{ route('logout') }}" method="POST">
-                              @csrf
-                              <div class="d-flex align-items-center">
-                                <div class=""><ion-icon name="log-out-outline"></ion-icon></div>
-                                <div class="ms-3"><span>Logout</span></div>
-                              </div>
-                            </form>
-                          </a>
-                        </li>
-                      @endauth
-                  </ul>
+                <l<li class="nav-item dropdown dropdown-user-setting">
+                    <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="javascript:;" data-bs-toggle="dropdown">
+                        <div class="user-setting">
+                            <img src="{{ url('assets/admin/images/avatars/06.png')}}" class="user-img" alt="">
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        @auth
+                            <li>
+                                <a class="dropdown-item" href="javascript:;">
+                                    <div class="d-flex flex-row align-items-center gap-2">
+                                        <img src="{{ url('assets/admin/images/avatars/06.png')}}" alt="" class="rounded-circle" width="54" height="54">
+                                        <div class="">
+                                            <h6 class="mb-0 dropdown-user-name">Jhon Deo</h6>
+                                            <small class="mb-0 dropdown-user-designation text-secondary">UI Developer</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item" href="javascript:;">
+                                    <div class="d-flex align-items-center">
+                                        <div class=""><ion-icon name="person-outline"></ion-icon></div>
+                                        <div class="ms-3"><span>Profile</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="javascript:;">
+                                    <div class="d-flex align-items-center">
+                                        <div class=""><ion-icon name="settings-outline"></ion-icon></div>
+                                        <div class="ms-3"><span>Setting</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="javascript:;">
+                                    <div class="d-flex align-items-center">
+                                        <div class=""><ion-icon name="speedometer-outline"></ion-icon></div>
+                                        <div class="ms-3"><span>Dashboard</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="javascript:;">
+                                    <div class="d-flex align-items-center">
+                                        <div class=""><ion-icon name="wallet-outline"></ion-icon></div>
+                                        <div class="ms-3"><span>Earnings</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="javascript:;">
+                                    <div class="d-flex align-items-center">
+                                        <div class=""><ion-icon name="cloud-download-outline"></ion-icon></div>
+                                        <div class="ms-3"><span>Downloads</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <form action="{{ route('logout') }}" method="POST">
+                                    @csrf
+                                    <button type="submit" class="dropdown-item d-flex align-items-center" style="background: none; border: none; color: inherit; cursor: pointer;">
+                                        <div><ion-icon name="log-out-outline"></ion-icon></div>
+                                        <div class="ms-3"><span>Logout</span></div>
+                                    </button>
+                                </form>
+                            </li>
+                        @endauth
+
+                        @guest
+                            <li>
+                                <a class="dropdown-item" href="{{ route('login') }}">
+                                    <div class="d-flex align-items-center">
+                                        <div class=""><ion-icon name="log-in-outline"></ion-icon></div>
+                                        <div class="ms-3"><span>Login</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                        @endguest
+                    </ul>
                 </li>
+
 
                </ul>
 
@@ -395,8 +405,9 @@
  <script type="module" src="{{ url('https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js') }}"></script>
  <!--plugins-->
  <script src="{{ url('assets/admin/plugins/perfect-scrollbar/js/perfect-scrollbar.js')}}"></script>
- <script src="{{ url('assets/admin/plugins/chartjs/chart.min.js')}}"></script>
+ <script src="{{ url('assets/admin/plugins/chartjs/chart.min.js') }}"></script>
  <script src="{{ url('assets/admin/js/index.js')}}"></script>
+ <script src="{{ url('assets/plugins/apexcharts-bundle/js/apexcharts.min.js') }}"></script>
  <!-- Main JS-->
  <script src="{{ url('assets/admin/js/main.js')}}"></script>
 

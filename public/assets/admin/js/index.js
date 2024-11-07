@@ -28,10 +28,10 @@ $(function() {
                     display: false,
                 }
             }
-             
+
           }
       });
-    
+
 
 
     // chart2
@@ -170,13 +170,13 @@ $(function() {
                     display: false,
                 }
             }
-             
+
           }
       });
 
 
 
 
-  
-    
+
+
 });

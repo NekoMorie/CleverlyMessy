@@ -11,7 +11,7 @@
     </div>
     <!--navigation-->
     <ul class="metismenu" id="menu">
-    <li class="menu-label">Admin Menu</li>
+    <li class="menu-label">Super Admin Menu</li>
       <li>
         <a href="{{ url('/admin') }}">
           <div class="parent-icon"><ion-icon name="home-sharp"></ion-icon>
@@ -48,19 +48,37 @@
         </a>
       </li>
       <li>
-        <a href="{{ url('/admin/waktu') }}">
+        <a href="{{ url('/admin/monitoring') }}">
           <div class="parent-icon"><ion-icon name="browsers-sharp"></ion-icon>
           </div>
           <div class="menu-title">Monitoring</div>
         </a>
       </li>
       <li>
-        <a href="{{ url('/admin/waktu') }}">
+        <a href="{{ url('/admin/kategori') }}">
+          <div class="parent-icon"><ion-icon name="ribbon-sharp"></ion-icon>
+          </div>
+          <div class="menu-title">Kategori</div>
+        </a>
+      </li>
+      <li>
+        <a href="{{ url('/admin/') }}">
           <div class="parent-icon"><ion-icon name="settings-sharp"></ion-icon>
           </div>
           <div class="menu-title">Setttings</div>
         </a>
       </li>
+      @auth
+    <li>
+        <form action="{{ route('logout') }}" method="post">
+            @csrf
+            <button type="submit" style="background: none; border: none; color: inherit; cursor: pointer;">
+                <div class="parent-icon"><ion-icon name="log-out-sharp"></ion-icon></div>
+                <div class="menu-title">Logout</div>
+            </button>
+        </form>
+    </li>
+@endauth
 
     </ul>
     <!--end navigation-->

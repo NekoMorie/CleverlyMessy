@@ -1,5 +1,5 @@
        <!--start sidebar -->
-       @extends('templates.dashboard')
+       @extends('admin.layout.template')
        @section('content')
      <!--end sidebar -->
 

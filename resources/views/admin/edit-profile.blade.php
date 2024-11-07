@@ -1,4 +1,4 @@
-@extends('templates.dashboard')
+@extends('admin.layout.template')
 @section('content')
         <div class="page-content-wrapper">
           <!-- start page content-->

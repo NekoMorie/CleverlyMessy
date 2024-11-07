@@ -2,11 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\AdminController;
-use App\Http\Controllers\UsersController;
-use App\Http\Controllers\LoginController;
-use App\Http\Controllers\LogoutController;
+use App\Http\Controllers;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,24 +16,22 @@ use App\Http\Controllers\LogoutController;
 */
 
 
-Route::get('/', [HomeController::class, 'index']) -> name('home');
+Route::get('/', [Controllers\HomeController::class, 'index']) -> name('home');
+Route::get('/contact', [Controllers\HomeController::class, 'contact']) -> name('contact');
+Route::get('/admin', [Controllers\AdminController::class, 'index']) -> name('admin');
+Route::get('/admin/users', [Controllers\AdminController::class, 'users']) -> name('users');
+Route::post('/admin/users', [Controllers\AdminController::class, 'usersAdd']) -> name('usersAdd');
+Route::delete('/admin/users/{id}', [Controllers\AdminController::class, 'userDelete']) -> name('userDelete');
+Route::get('/admin/profile', [Controllers\AdminController::class, 'profile']) -> name('profile');
+Route::get('/admin/lokasi', [Controllers\AdminController::class, 'lokasi']) -> name('lokasi');
+Route::get('/admin/waktu', [Controllers\AdminController::class, 'waktu']) -> name('waktu');
+Route::get('/admin/monitoring', [Controllers\AdminController::class, 'monitoring']) -> name('monitoring');
+Route::get('/admin/kategori', [Controllers\AdminController::class, 'kategori']) -> name('kategori');
 
-Route::get('/contact', [HomeController::class, 'contact']) -> name('contact');
+Route::get('/admin/edit-profile', [Controllers\AdminController::class, 'editprofile']) -> name('editprofile');
 
-Route::get('/admin', [AdminController::class, 'index']) -> name('admin');
-
-Route::get('/admin/users', [AdminController::class, 'users']) -> name('users');
-
-Route::get('/admin/profile', [AdminController::class, 'profile']) -> name('profile');
-
-Route::get('/admin/lokasi', [AdminController::class, 'lokasi']) -> name('lokasi');
-
-Route::get('/admin/waktu', [AdminController::class, 'waktu']) -> name('waktu');
-
-Route::get('/admin/edit-profile', [AdminController::class, 'editprofile']) -> name('editprofile');
-
-Route::get('/login', [LoginController::class, 'LoginForm'])->name('login')->middleware('guest');
-Route::post('/login', [LoginController::class, 'authenticate']);
+Route::get('/login', [Controllers\LoginController::class, 'LoginForm'])->name('login')->middleware('guest');
+Route::post('/login', [Controllers\LoginController::class, 'authenticate']);
 Route::post('/logout', function () {
     Auth::logout();
     request()->session()->invalidate();

@@ -1,4 +1,4 @@
-@extends('templates.dashboard')
+@extends('admin.layout.template')
 <!--end sidebar -->
 <!--start sidebar -->
 
