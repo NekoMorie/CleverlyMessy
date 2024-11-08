@@ -62,7 +62,7 @@
         </a>
       </li>
       <li>
-        <a href="{{ url('/admin/') }}">
+        <a href="{{ url('/admin/setting') }}">
           <div class="parent-icon"><ion-icon name="settings-sharp"></ion-icon>
           </div>
           <div class="menu-title">Setttings</div>

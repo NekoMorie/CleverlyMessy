@@ -68,11 +68,6 @@ class UserCotroller extends Controller
     public function updateUser(Request $request, $id)
     {
         $user = User::findOrFail($id);
-        if ($request->hasFile('image')) {
-            $imagePath = $request->file('image')->store('userImg', 'public');
-        } else {
-            $imagePath = $user->image; // Atur ke null jika tidak ada file yang diunggah
-        }
         if ($request->level == null){
             $level = $user->level;
         } else {
@@ -83,6 +78,18 @@ class UserCotroller extends Controller
         } else {
             $gender = $request->gender;
         }
+
+        if ($request->hasFile('image') && $user->image != null) {
+            $imagePath = $request->file('image')->store('userImg', 'public');
+            Storage::disk('public')->delete($user->image);
+        } else if($request->hasFile('image')){
+            $imagePath = $request->file('image')->store('userImg', 'public');
+        } else{
+            $imagePath = null; // Atur ke null jika tidak ada file yang diunggah
+        }
+
+        // dd($imagePath);
+
         $user->name = $request->name;
         $user->level = $level;
         $user->gender = $gender;

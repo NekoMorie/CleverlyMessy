@@ -314,8 +314,6 @@
           </header>
         <!--end top header-->
         @yield("content")
-    </div>
-</div>
 
         <!--start footer-->
         <footer class="footer">

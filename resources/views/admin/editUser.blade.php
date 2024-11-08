@@ -46,7 +46,7 @@
                     <div class="border p-3 rounded">
                     <h6 class="mb-0 text-uppercase">Edit User</h6>
                     <hr>
-                    <form class="row g-3" action="{{ url('admin/updateUser',$user->id) }}" method="POST">
+                    <form class="row g-3" action="{{ url('admin/updateUser',$user->id) }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         @method('PUT')
                         <div class="col-12">
