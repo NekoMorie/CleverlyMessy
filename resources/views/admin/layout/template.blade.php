@@ -314,6 +314,8 @@
           </header>
         <!--end top header-->
         @yield("content")
+    </div>
+</div>
 
         <!--start footer-->
         <footer class="footer">
@@ -410,6 +412,7 @@
  <script src="{{ url('assets/plugins/apexcharts-bundle/js/apexcharts.min.js') }}"></script>
  <!-- Main JS-->
  <script src="{{ url('assets/admin/js/main.js')}}"></script>
+ <script src="{{ url('assets/admin/js/delete.js') }}"></script>
 
 
 </body>

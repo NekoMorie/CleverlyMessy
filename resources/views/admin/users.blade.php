@@ -39,7 +39,7 @@
                      <h5 class="mb-0">Daftar User</h5>
                       <form class="ms-auto position-relative">
                         <div class="position-absolute top-50 translate-middle-y search-icon px-3"><ion-icon name="search-sharp"></ion-icon></div>
-                        <input class="form-control ps-5" type="text" placeholder="search">
+                        <input class="form-control ps-5" type="text" placeholder="search" value="{{ request('search') }}" name="search">
                       </form>
                   </div>
                   <div class="table-responsive mt-3">
@@ -57,10 +57,14 @@
                       <tbody>
                         @foreach ($users as $data )
                         <tr>
-                            <td>1</td>
+                            <td>{{ $no++ }}</td>
                             <td>
                                 <div class="d-flex align-items-center gap-3 cursor-pointer">
-                                    <img src="{{ url('storage/'.$data->image) }}" class="rounded-circle" width="44" height="44" alt="">
+                                    @if ($data->image == null)
+                                        <img src="{{ url('storage/pp/foto_default.jpg') }}" class="rounded-circle" width="44" height="44" alt="">
+                                    @else
+                                        <img src="{{ url('storage/'.$data->image) }}" class="rounded-circle" width="44" height="44" alt="">
+                                    @endif
                                     <div class="">
                                         <p class="mb-0">{{ $data->name }}</p>
                                     </div>
@@ -71,9 +75,8 @@
                             <td>{{ $data->created_at }}</td>
                             <td>
                                 <div class="table-actions d-flex align-items-center gap-3 fs-6">
-                                    <a href="javascript:;" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Views" aria-label="Views"><ion-icon name="eye-sharp"></ion-icon></a>
-                                    <a href="javascript:;" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit" aria-label="Edit"><ion-icon name="pencil-sharp"></ion-icon></a>
-                                    <a href="javascript:;" class="text-danger" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="{{ $data->id }}" title="Delete" aria-label="Delete"><ion-icon name="trash-sharp"></ion-icon></a>
+                                    <a href="{{ route('editUser',$data->id) }}" class="text-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit" aria-label="Edit"><ion-icon name="pencil-sharp"></ion-icon></a>
+                                    <a href="javascript:;" class="text-danger" data-bs-toggle="modal" data-bs-target="#deleteModalUser" data-bs-placement="bottom" idUser="{{ $data->id }}" title="Delete" aria-label="Delete"><ion-icon name="trash-sharp"></ion-icon></a>
                                 </div>
                             </td>
                         </tr>
@@ -90,7 +93,7 @@
            </div>
 
            {{-- Modal --}}
-           <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal fade" id="deleteModalUser" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -144,7 +147,7 @@
         </div>
 
         <div class="modal fade" id="tambahModal" tabindex="-1" aria-labelledby="tambahModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog  modal-dialog-scrollable">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="tambahModalLabel">Tambah Data User</h5>
@@ -163,16 +166,33 @@
                             </div>
                             <div class="mb-3">
                                 <label for="password" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="password" name="password">
+                                <input type="password" class="form-control" id="password" name="password" required>
                             </div>
                             <div class="mb-3">
                                 <label for="level" class="form-label">Level</label>
                                 <select class="form-select" name="level" required>
                                     <option selected disabled>Pilih Level</option>
-                                    <option value="Super">Super Admin</option>
+                                    <option value="Super Admin">Super Admin</option>
                                     <option value="Admin">Admin</option>
-                                    <option value="Member">Member</option>
+                                    <option value="Anggota">Anggota</option>
                                 </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telp" class="form-label">Nomor Telpon</label>
+                                <input type="text" class="form-control" id="telp" name="telp" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="gender" class="form-label">Gender</label>
+                                <select class="form-select" name="gender" required>
+                                    <option selected disabled>Pilih Gender</option>
+                                    <option value="Pria">Pria</option>
+                                    <option value="Wanita">Wanita</option>
+                                    <option value="Tumbuhan">Tumbuhan</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="alamat" class="form-label">Alamat</label>
+                                <textarea class="form-control" id="alamat" name="alamat" required></textarea>
                             </div>
                             <div class="mb-3">
                                 <label for="image" class="form-label">Unggah Foto</label>
@@ -199,8 +219,6 @@
                         confirmButtonText: 'OK'
                     });
                 @endif
-            </script>
-            <script src="{{ url('assets/admin/js/users.js') }}">
             </script>
 
 

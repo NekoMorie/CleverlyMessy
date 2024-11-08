@@ -19,12 +19,8 @@ use App\Http\Controllers;
 Route::get('/', [Controllers\HomeController::class, 'index']) -> name('home');
 Route::get('/contact', [Controllers\HomeController::class, 'contact']) -> name('contact');
 Route::get('/admin', [Controllers\AdminController::class, 'index']) -> name('admin');
-Route::get('/admin/users', [Controllers\AdminController::class, 'users']) -> name('users');
-Route::post('/admin/users', [Controllers\AdminController::class, 'usersAdd']) -> name('usersAdd');
-Route::delete('/admin/users/{id}', [Controllers\AdminController::class, 'userDelete']) -> name('userDelete');
 Route::get('/admin/profile', [Controllers\AdminController::class, 'profile']) -> name('profile');
-Route::get('/admin/lokasi', [Controllers\AdminController::class, 'lokasi']) -> name('lokasi');
-Route::get('/admin/waktu', [Controllers\AdminController::class, 'waktu']) -> name('waktu');
+// Route::get('/admin/waktu', [Controllers\AdminController::class, 'waktu']) -> name('waktu');
 Route::get('/admin/monitoring', [Controllers\AdminController::class, 'monitoring']) -> name('monitoring');
 Route::get('/admin/kategori', [Controllers\AdminController::class, 'kategori']) -> name('kategori');
 
@@ -38,3 +34,21 @@ Route::post('/logout', function () {
     request()->session()->regenerateToken();
     return redirect('/login');
 })->name('logout');
+
+
+//  USERS
+Route::get('/admin/users', [Controllers\UserCotroller::class, 'index']) -> name('users');
+Route::get('/admin/editUser/{id}', [Controllers\UserCotroller::class, 'editUser']) -> name('editUser');
+Route::put('/admin/updateUser/{id}', [Controllers\UserCotroller::class, 'updateUser']) -> name('updateUser');
+Route::post('/admin/users', [Controllers\UserCotroller::class, 'usersAdd']) -> name('usersAdd');
+Route::delete('/admin/users/{id}', [Controllers\UserCotroller::class, 'userDelete']) -> name('userDelete');
+
+// LOKASI
+Route::get('/admin/lokasi', [Controllers\LokasiController::class, 'index']) -> name('lokasi');
+Route::post('/admin/lokasi', [Controllers\LokasiController::class, 'store']) -> name('store');
+Route::delete('/admin/lokasi/{id}', [Controllers\LokasiController::class, 'hapus']) -> name('hapus');
+
+// WAKTU
+Route::get('/admin/waktu', [Controllers\WaktuController::class, 'index']) -> name('waktu');
+Route::post('/admin/waktu', [Controllers\WaktuController::class, 'store']) -> name('addWaktu');
+Route::delete('/admin/waktu/{id}', [Controllers\WaktuController::class, 'hapus']) -> name('hapusWaktu');
