@@ -52,3 +52,7 @@ Route::delete('/admin/lokasi/{id}', [Controllers\LokasiController::class, 'hapus
 Route::get('/admin/waktu', [Controllers\WaktuController::class, 'index']) -> name('waktu');
 Route::post('/admin/waktu', [Controllers\WaktuController::class, 'store']) -> name('addWaktu');
 Route::delete('/admin/waktu/{id}', [Controllers\WaktuController::class, 'hapus']) -> name('hapusWaktu');
+
+// ABSEN
+Route::get('/absen', [Controllers\AbsenController::class, 'index'])-> name('absen');
+Route::post('/absen', [Controllers\AbsenController::class, 'store'])->name('absen.store');

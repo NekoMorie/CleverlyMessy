@@ -48,6 +48,13 @@
         </a>
       </li>
       <li>
+        <a href="{{ url('/absen') }}">
+          <div class="parent-icon"><ion-icon name="camera-sharp"></ion-icon>
+          </div>
+          <div class="menu-title">Absen</div>
+        </a>
+      </li>
+      <li>
         <a href="{{ url('/admin/monitoring') }}">
           <div class="parent-icon"><ion-icon name="browsers-sharp"></ion-icon>
           </div>
