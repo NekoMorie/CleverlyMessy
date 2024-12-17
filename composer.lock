@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "36d47ca0654f6d7aa9d0c9fbc7ef90a4",
+    "content-hash": "19ab559716ad9948cc40162ddd2926d0",
     "packages": [
         {
             "name": "brick/math",
@@ -1053,6 +1053,69 @@
                 }
             ],
             "time": "2023-12-03T19:50:20+00:00"
+        },
+        {
+            "name": "kennedy-osaze/laravel-api-response",
+            "version": "v2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kennedy-osaze/laravel-api-response.git",
+                "reference": "017eb5864160ce311173647a8aab12ddf9e81f32"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kennedy-osaze/laravel-api-response/zipball/017eb5864160ce311173647a8aab12ddf9e81f32",
+                "reference": "017eb5864160ce311173647a8aab12ddf9e81f32",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^10.0",
+                "illuminate/translation": "^10.0",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "kennedy-osaze/php-cs-fixer-config": "^2.0.1",
+                "nunomaduro/collision": "^7.0",
+                "orchestra/testbench": "^8.0",
+                "phpunit/phpunit": "^10.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "KennedyOsaze\\LaravelApiResponse\\LaravelApiResponseServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "KennedyOsaze\\LaravelApiResponse\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kennedy Osaze",
+                    "email": "me.osaze@gmail.com",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Renders consistent HTTP JSON responses for API-based projects",
+            "homepage": "https://github.com/kennedy-osaze/laravel-api-response",
+            "keywords": [
+                "api",
+                "json",
+                "laravel",
+                "response"
+            ],
+            "support": {
+                "issues": "https://github.com/kennedy-osaze/laravel-api-response/issues",
+                "source": "https://github.com/kennedy-osaze/laravel-api-response/tree/v2.0"
+            },
+            "time": "2023-03-19T23:37:51+00:00"
         },
         {
             "name": "laravel/framework",
@@ -8219,5 +8282,5 @@
         "php": "^8.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }

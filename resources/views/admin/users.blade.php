@@ -124,24 +124,24 @@
                         <h5 class="modal-title" id="importModalLabel">Import Users</h5>
                         <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <form action="{{ url('/pegawai/import') }}" method="POST" enctype="multipart/form-data">
+                    {{-- <form action="{{ url('/pegawai/import') }}" method="POST" enctype="multipart/form-data"> --}}
                         <div class="modal-body">
-                            @csrf
+                            {{-- @csrf --}}
                             <div class="form-group">
                                 <label for="file_excel">File Excel</label>
-                                <input type="file" name="file_excel" id="file_excel" class="form-control @error('file_excel') is-invalid @enderror">
-                                @error('file_excel')
+                                <input type="file" name="file_excel" id="file_excel" class="form-control ">
+                                {{-- @error('file_excel')
                                     <div class="invalid-feedback">
                                         {{ $message }}
                                     </div>
-                                @enderror
+                                @enderror --}}
                             </div>
                         </div>
                         <div class="modal-footer">
                             <button class="btn btn-primary" type="button" data-bs-dismiss="modal">Close</button>
                             <button class="btn btn-secondary" type="submit">Save changes</button>
                         </div>
-                    </form>
+                    {{-- </form> --}}
                 </div>
             </div>
         </div>

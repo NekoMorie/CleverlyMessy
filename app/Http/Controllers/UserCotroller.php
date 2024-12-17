@@ -8,23 +8,28 @@ use Illuminate\Support\Facades\Storage;
 
 class UserCotroller extends Controller
 {
-    public function index(Request $request){
-        $title = 'User';
-        $no = 1;
+    public function index(Request $request)
+    {
         $data = User::orderBy('name', 'ASC');
 
-        // Check if there's a search term
         if ($request->has('search')) {
             $searchTerm = $request->input('search');
             $data = $data->where('name', 'LIKE', '%' . $searchTerm . '%')
-                         ->orWhere('created_by', 'LIKE', '%' . $searchTerm . '%');
+                        ->orWhere('created_by', 'LIKE', '%' . $searchTerm . '%');
         }
 
-        // Get paginated results or full list if no pagination is desired
         $users = $data->get();
 
-        // Return view with variables
+        // Default ke tampilan HTML
+        $title = 'User';
+        $no = 1;
         return view('admin/users', compact('title', 'users', 'no'));
+    }
+
+    public function indexApi()
+    {
+        $data = User::orderBy('name', 'ASC')->get();
+        return $this->successResponse('oKE Response', $data);
     }
 
     public function usersAdd(Request $request)
