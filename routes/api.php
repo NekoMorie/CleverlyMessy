@@ -38,3 +38,9 @@ Route::delete('delete/absen/{id}', [Controllers\Api\AbsenApiController::class, '
 Route::put('update/absen/{id}', [Controllers\Api\AbsenApiController::class, 'update']);
 Route::get('get/absen/{id}', [Controllers\Api\AbsenApiController::class, 'get']);
 Route::get('absen/statistik/{id}', [Controllers\Api\AbsenApiController::class, 'statistik'])->middleware('auth:sanctum');
+
+
+Route::get('get/task/{id}', [Controllers\Api\ApiTaskController::class, 'index'])->middleware('auth:sanctum');
+Route::get('get/task1/{id}', [Controllers\Api\ApiTaskController::class, 'reminder'])->middleware('auth:sanctum');
+Route::post('task/add', [Controllers\Api\ApiTaskController::class, 'store']);
+Route::delete('task/delete/{id}', [Controllers\Api\ApiTaskController::class, 'hapus'])->middleware('auth:sanctum');

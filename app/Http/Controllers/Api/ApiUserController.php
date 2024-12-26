@@ -13,6 +13,9 @@ class ApiUserController extends Controller
         $user = User::with('classname')->findOrFail($id); // Eager load relasi
         $baseUrl = config('app.url');
         $imagePath = $user->image;
+        if($user->image == null){
+            $imagePath = 'pp/foto_default.jpg';
+        }
         $imageUrl = $baseUrl . '/storage/' . $imagePath;
 
         return response()->json([
@@ -55,7 +58,9 @@ class ApiUserController extends Controller
         //     'nis' => 'required|string',
         // ]);
         $user = User::findOrFail($id);
-        Storage::disk('public')->delete($user->image);
+        if($user->image != null){
+            Storage::disk('public')->delete($user->image);
+        }
         $folderName = 'userImg';
         $imageName = Str::random(32). "." .$request->image->getClientOriginalExtension();
         $filePath = $folderName .'/' . $imageName;
