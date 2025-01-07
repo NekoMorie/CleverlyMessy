@@ -1,25 +1,28 @@
 @extends('profile.layout.app')
 
 @section('content')
-<!-- Start Banner
-    ============================================= -->
-    <div class="banner-area auto-height bg-fixed banner-style-four text-default" style="background-image: url(assets/img/shape/1.jpg);">
+    <!-- Start Banner-->
+    <div class="banner-area auto-height bg-fixed banner-style-four text-default"
+        style="background-image: url(assets/img/shape/bg2.png);">
         <div class="shape-bottom" style="background-image: url(assets/img/shape/44.png);"></div>
         <div class="container">
             <div class="double-items">
                 <div class="row align-center">
 
                     <div class="col-lg-6 info">
-                        <h4 class="wow fadeInRight"><strong># No1</strong> Trending Apps On Play Store</h4>
-                        <h2 class="wow fadeInLeft" data-wow-defaul="300ms">Efisiensi Digital untuk Kehadiran Optimal </h2>
-                        <p class="wow fadeInLeft" data-wow-delay="500ms">
-                            Lasted hunted enough an up seeing in lively letter. Had judgment out opinions property the supplied.
+                        <h4 class="wow fadeInRight text-black"><strong># No1</strong> Trending Apps On Play Store</h4>
+                        <h2 class="wow fadeInLeft text-black" data-wow-defaul="300ms">Efisiensi Digital untuk Kehadiran
+                            Optimal </h2>
+                        <p class="wow fadeInLeft text-white" data-wow-delay="500ms">
+                            Lasted hunted enough an up seeing in lively letter. Had judgment out opinions property the
+                            supplied.
                         </p>
-                        <a class="btn btn-md circle btn-gradient effect wow fadeInUp" data-wow-delay="700ms" href="#">Ayo Coba Sekarang! <i class="fas fa-angle-right"></i></a>
+                        <a class="btn btn-md circle btn-gradient effect wow fadeInUp" data-wow-delay="700ms"
+                            href="#">Ayo Coba Sekarang! <i class="fas fa-angle-right"></i></a>
                     </div>
                     <div class="col-lg-6 thumb wow fadeInRight" data-wow-delay="900ms">
-                       <img src="assets/img/fitur/hp.png" alt="Thumb">
-                   </div>
+                        <img src="assets/image/hp_header.png" alt="Thumb">
+                    </div>
 
 
                 </div>
@@ -28,8 +31,7 @@
     </div>
     <!-- End Banner -->
 
-    <!-- Start Features
-    ============================================= -->
+    <!-- Start Features -->
     <section id="about">
         <div class="features-style-four-area text-center default-padding bottom-less">
             <div class="container">
@@ -39,8 +41,9 @@
                             <h2>Mengapa Kami Pilihan Terbaik?</h2>
                             <div class="devider"></div>
                             <p>
-                            Kami menawarkan produk dengan berbagai macam fitur yang menarik dan sangat bermanfaat, terutama dalam hal pencatatan
-                            kehadiran secara digital.
+                                Kami menawarkan produk dengan berbagai macam fitur yang menarik dan sangat bermanfaat,
+                                terutama dalam hal pencatatan
+                                kehadiran secara digital.
                             </p>
                         </div>
                     </div>
@@ -90,7 +93,8 @@
                                 <h4>Deteksi Lokasi untuk Verifikasi Absensi</h4>
                                 <p>
                                     itur ini memanfaatkan deteksi lokasi untuk memastikan bahwa
-                                    absensi dilakukan di lokasi yang diizinkan atau di lokasi yang sesuai dengan kebijakan perusahaan.
+                                    absensi dilakukan di lokasi yang diizinkan atau di lokasi yang sesuai dengan kebijakan
+                                    perusahaan.
                                 </p>
                             </div>
                         </div>
@@ -102,9 +106,439 @@
     </section>
     <!-- End Features -->
 
-    <!-- Start Team
-    ============================================= -->
-    <div id="team" class="team-area default-padding bg-gray bg-cover bottom-less" style="background-image: url(assets/img/shape/33.png);">
+    <!-- Start Video
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ============================================= -->
+    <div class="video-style-one-area text-light shadow dark video-bg-live bg-cover"
+        style="background-image: url(assets/img/2440x1578.png)">
+        <div class="player bg-cover"
+            data-property="{videoURL:'cAN0NI5IZ5c',containment:'.video-bg-live', showControls:false, autoPlay:true, zoom:0, loop:true, mute:true, startAt:0, opacity:1, quality: 'highres'}">
+        </div>
+        <div class="video-content-info default-padding shadow dark">
+            <div class="container">
+                <div class="row align-center">
+                    <div class="col-lg-6 video-style-one-item">
+                        <h2>
+                            Creative New Apps for <br />
+                            IT, Retail,& Banking
+                        </h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Aliquid nostrum, aut, perspiciatis, iusto animi incidunt ab
+                            recusandae molestiae repellendus distinctio maxime ex architecto
+                            vero fuga iste pariatur alias vitae tempore.
+                        </p>
+                        <div class="fun-facto-box">
+                            <div class="fun-fact">
+                                <div class="counter">
+                                    <div class="timer" data-to="18" data-speed="2000">18</div>
+                                    <div class="operator">K</div>
+                                </div>
+                                <span class="medium">App Downloads</span>
+                            </div>
+                            <div class="fun-fact">
+                                <div class="counter">
+                                    <div class="timer" data-to="98" data-speed="2000">98</div>
+                                    <div class="operator">%</div>
+                                </div>
+                                <span class="medium">Positive Rating</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 video-style-one-item text-center">
+                        <a href="https://www.youtube.com/watch?v=owhuBrGIOsE" class="popup-youtube video-btn"><i
+                                class="fas fa-play"></i>Watch Promo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Video -->
+
+    <!-- Start App features -->
+    <div class="app-feature-thumb">
+        <div class="owl-carousel app-features-carousel">
+
+            <!-- Slide 1 -->
+            <div class="app-features-area default-padding">
+                <div class="container">
+                    <div class="row align-center">
+                        <!-- Left Column -->
+                        <div class="col-lg-3 text-end app-feature-style-one">
+                            <div class="app-feature-item">
+                                <h4>Management</h4>
+                                <p>Attention are had allowance own perceived abilities. Unfeeling are had allowance own
+                                    perceived abilities.</p>
+                            </div>
+                            <div class="app-feature-item">
+                                <h4>Time Tracking</h4>
+                                <p>Business are had allowance own perceived abilities. Unfeeling are had allowance own
+                                    perceived
+                                    abilities.</p>
+                            </div>
+                            <div class="app-feature-item">
+                                <h4>Payment</h4>
+                                <p>Providing are had allowance own perceived abilities. Unfeeling are had allowance own
+                                    perceived abilities.</p>
+                            </div>
+                        </div>
+                        <!-- Center Column -->
+                        <div class="col-lg-6 text-center app-feature-style-one">
+                            <img src="assets/img/illustration/desain1.png" style="width: 90%; margin:28.5px"
+                                alt="Thumb" />
+                            {{-- </div> --}}
+                        </div>
+                        <!-- Right Column -->
+                        <div class="col-lg-3 app-feature-style-one">
+                            <div class="app-feature-item">
+                                <h4>Productivity</h4>
+                                <p>Attention are had allowance own perceived abilities. Unfeeling are had allowance own
+                                    perceived abilities.</p>
+                            </div>
+                            <div class="app-feature-item">
+                                <h4>Time Tracking</h4>
+                                <p>Providing are had allowance own perceived abilities. Unfeeling are had allowance own
+                                    perceived abilities.</p>
+                            </div>
+                            <div class="app-feature-item">
+                                <h4>Live Support</h4>
+                                <p>Business are had allowance own perceived abilities. Unfeeling are had allowance own
+                                    perceived
+                                    abilities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="app-features-area default-padding">
+                <div class="container">
+                    <div class="row align-center">
+                        <!-- Left Column -->
+                        <div class="col-lg-3 text-end app-feature-style-one">
+                            <div class="app-feature-item">
+                                <h4>Management</h4>
+                                <p>Attention are had allowance own perceived abilities. Unfeeling are had allowance own
+                                    perceived abilities.</p>
+                            </div>
+                            <div class="app-feature-item">
+                                <h4>Time Tracking</h4>
+                                <p>Business are had allowance own perceived abilities. Unfeeling are had allowance own
+                                    perceived
+                                    abilities.</p>
+                            </div>
+                            <div class="app-feature-item">
+                                <h4>Payment</h4>
+                                <p>Providing are had allowance own perceived abilities. Unfeeling are had allowance own
+                                    perceived abilities.</p>
+                            </div>
+                        </div>
+                        <!-- Center Column -->
+                        <div class="col-lg-6 text-center app-feature-style-one">
+                            {{-- <div class="app-feature-thumb"> --}}
+                            <img src="assets/img/illustration/desain2.png" style="width: 90%; margin:28.5px"
+                                alt="Thumb" />
+                            {{-- </div> --}}
+                        </div>
+                        <!-- Right Column -->
+                        <div class="col-lg-3 app-feature-style-one">
+                            <div class="app-feature-item">
+                                <h4>Productivity</h4>
+                                <p>Attention are had allowance own perceived abilities. Unfeeling are had allowance own
+                                    perceived abilities.</p>
+                            </div>
+                            <div class="app-feature-item">
+                                <h4>Time Tracking</h4>
+                                <p>Providing are had allowance own perceived abilities. Unfeeling are had allowance own
+                                    perceived abilities.</p>
+                            </div>
+                            <div class="app-feature-item">
+                                <h4>Live Support</h4>
+                                <p>Business are had allowance own perceived abilities. Unfeeling are had allowance own
+                                    perceived
+                                    abilities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{-- slide 3 --}}
+            <div class="app-features-area default-padding">
+                <div class="container">
+                    <div class="row align-center">
+                        <!-- Left Column -->
+                        <div class="col-lg-3 text-end app-feature-style-one">
+                            <div class="app-feature-item">
+                                <h4>Management</h4>
+                                <p>Attention are had allowance own perceived abilities. Unfeeling are had allowance own
+                                    perceived abilities.</p>
+                            </div>
+                            <div class="app-feature-item">
+                                <h4>Time Tracking</h4>
+                                <p>Business are had allowance own perceived abilities. Unfeeling are had allowance own
+                                    perceived
+                                    abilities.</p>
+                            </div>
+                            <div class="app-feature-item">
+                                <h4>Payment</h4>
+                                <p>Providing are had allowance own perceived abilities. Unfeeling are had allowance own
+                                    perceived abilities.</p>
+                            </div>
+                        </div>
+                        <!-- Center Column -->
+                        <div class="col-lg-6 text-center app-feature-style-one">
+                            <img src="assets/img/illustration/absensi.png" style="width: 90%; margin:28.5px"alt="Thumb" />
+                        </div>
+                        <!-- Right Column -->
+                        <div class="col-lg-3 app-feature-style-one">
+                            <div class="app-feature-item">
+                                <h4>Productivity</h4>
+                                <p>Attention are had allowance own perceived abilities. Unfeeling are had allowance own
+                                    perceived abilities.</p>
+                            </div>
+                            <div class="app-feature-item">
+                                <h4>Time Tracking</h4>
+                                <p>Providing are had allowance own perceived abilities. Unfeeling are had allowance own
+                                    perceived abilities.</p>
+                            </div>
+                            <div class="app-feature-item">
+                                <h4>Live Support</h4>
+                                <p>Business are had allowance own perceived abilities. Unfeeling are had allowance own
+                                    perceived
+                                    abilities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add More Slides as Needed -->
+        </div>
+    </div>
+
+    <!-- End App Features -->
+
+
+    <!-- Start Pricing -->
+    <section id="harga">
+        <div id="pricing" class="pricing-area bg-gray default-padding bottom-less">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="site-heading text-center">
+                            <h2>Our Packages</h2>
+                            <div class="devider"></div>
+                            <p>
+                                Outlived no dwelling denoting in peculiar as he believed. Behaviour excellent middleton be
+                                as it curiosity departure ourselves very extreme future.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="pricing-style-two-box">
+                    <div class="row">
+                        <!-- Single Itme -->
+                        <div class="col-lg-4 col-md-6 single-item pricing-style-two">
+                            <div class="pricing-item">
+                                {{-- {!! $paketGratis->icon !!} --}}
+                                <i class="fa-solid fa-award "></i>
+
+                                <div class="pricing-header">
+                                    <h4>{{ $paketGratis->nama_paket }}</h4>
+                                </div>
+                                <div class="price">
+                                    <h2><sup>Rp</sup>{{ number_format($paketGratis->harga, 0, ',', '.') }} <sub>/
+                                            Monthly</sub>
+                                    </h2>
+                                </div>
+                                <ul>
+                                    @foreach ($paketGratis->paketInfo as $data)
+                                        <li><i class="fas fa-check"></i> {{ $data->list_paket }}</li>
+                                    @endforeach
+                                </ul>
+                                <a class="btn circle btn-gray btn-sm" href="#">Purchase Plan</a>
+                            </div>
+                        </div>
+                        <!-- End Single Itme -->
+
+                        <!-- Single Itme -->
+                        <div class="col-lg-4 col-md-6 single-item active pricing-style-two">
+                            <div class="pricing-item">
+                                {!! $paketBasic->icon !!}
+                                <div class="pricing-header">
+                                    <h4>{{ $paketBasic->nama_paket }}</h4>
+                                </div>
+                                <div class="price">
+                                    <h2><sup>Rp</sup>{{ number_format($paketBasic->harga, 0, ',', '.') }} <sub>/
+                                            Monthly</sub>
+                                </div>
+                                <ul>
+                                    @foreach ($paketBasic->paketInfo as $data)
+                                        <li><i class="fas fa-check"></i> {{ $data->list_paket }}</li>
+                                    @endforeach
+                                </ul>
+                                <a class="btn circle btn-theme-effect btn-sm" href="#">Purchase Plan</a>
+                            </div>
+                        </div>
+                        <!-- End Single Itme -->
+                        <!-- Single Itme -->
+                        <div class="col-lg-4 col-md-6 single-item pricing-style-two">
+                            <div class="pricing-item">
+                                {!! $paketSilver->icon !!}
+                                <div class="pricing-header">
+                                    <h6>{{ $paketSilver->nama_paket }}</h6>
+                                </div>
+                                <div class="price">
+                                    <h4><sup>Rp</sup>{{ number_format($paketSilver->harga, 0, ',', '.') }} <sub>/
+                                            Monthly</sub>
+                                </div>
+                                <ul>
+                                    @foreach ($paketSilver->paketInfo as $data)
+                                        <li><i class="fas fa-check"></i> {{ $data->list_paket }}</li>
+                                    @endforeach
+
+                                </ul>
+                                <a class="btn circle btn-gray btn-sm" href="#">Purchase Plan</a>
+                            </div>
+                        </div>
+                        <!-- End Single Itme -->
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center mt-3" style="height: 100px;">
+                <a class="btn circle btn-theme-effect btn-sm" href="{{ route('harga') }}">View More &nbsp; <i
+                        class="fas fa-angle-double-right"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- End Pricing Area -->
+
+    <!-- Start Testimonials-->
+
+    <div class="testimonials-area text-light shadow dark bg-fixed carousel-shadow default-padding"
+        style="background-image: url(assets/img/shape/2.jpg)">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h2>What people say</h2>
+                        <div class="devider"></div>
+                        <p>
+                            Outlived no dwelling denoting in peculiar as he believed.
+                            Behaviour excellent middleton be as it curiosity departure
+                            ourselves very extreme future.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="testimonial-items">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="testimonial-carousel owl-carousel owl-theme">
+                            <!-- Single Item -->
+                            <div class="item">
+                                <div class="provider">
+                                    <img src="assets/img/100x100.png" alt="Author" />
+                                    <div class="content">
+                                        <h4>Devid Warner</h4>
+                                        <span> Managing Director</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <p>
+                                        Otherwise concealed favourite frankness on be at dashwoods
+                                        mentions defective at. Sympathize interested simplicity at
+                                        do projecting care effect increasing terminated. As edward
+                                        settle limits at in. Chamber reaching abnormally nothing
+                                        be accesing to the point. very extreme future.
+                                    </p>
+                                </div>
+                                <div class="reason">
+                                    <h5>Design Quality</h5>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+                            <!-- Single Item -->
+                            <div class="item">
+                                <div class="provider">
+                                    <img src="assets/img/100x100.png" alt="Author" />
+                                    <div class="content">
+                                        <h4>Pruasuj Natasha</h4>
+                                        <span> Theme Developer</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <p>
+                                        Otherwise concealed favourite frankness on be at dashwoods
+                                        mentions defective at. Sympathize interested simplicity at
+                                        do projecting care effect increasing terminated. As edward
+                                        settle limits at in. Chamber reaching abnormally nothing
+                                        be accesing to the point. very extreme future.
+                                    </p>
+                                </div>
+                                <div class="reason">
+                                    <h5>Customer Support</h5>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+                            <!-- Single Item -->
+                            <div class="item">
+                                <div class="provider">
+                                    <img src="assets/img/100x100.png" alt="Author" />
+                                    <div class="content">
+                                        <h4>Koyel Anderson</h4>
+                                        <span> Project Manager</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <p>
+                                        Otherwise concealed favourite frankness on be at dashwoods
+                                        mentions defective at. Sympathize interested simplicity at
+                                        do projecting care effect increasing terminated. As edward
+                                        settle limits at in. Chamber reaching abnormally nothing
+                                        be accesing to the point. very extreme future.
+                                    </p>
+                                </div>
+                                <div class="reason">
+                                    <h5>User Friendly</h5>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Testimonials Area -->
+
+    <!-- Start Team-->
+    <div id="team" class="team-area default-padding bg-gray bg-cover bottom-less"
+        style="background-image: url(assets/img/shape/33.png);">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
@@ -112,7 +546,8 @@
                         <h2>CleverlyMessy Team</h2>
                         <div class="devider"></div>
                         <p>
-                            Outlived no dwelling denoting in peculiar as he believed. Behaviour excellent middleton be as it curiosity departure ourselves very extreme future.
+                            Outlived no dwelling denoting in peculiar as he believed. Behaviour excellent middleton be as it
+                            curiosity departure ourselves very extreme future.
                         </p>
                     </div>
                 </div>
@@ -125,7 +560,7 @@
                     <div class="single-item col-lg-4 col-md-4">
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/800x900.png" alt="Thumb">
+                                <img src="{{ asset('assets/photo/davi.png') }}" alt="Thumb" class="fixed-dimension">
                                 <div class="social">
                                     <input type="checkbox" id="toggle" class="share-toggle" hidden>
                                     <label for="toggle" class="share-button">
@@ -143,7 +578,7 @@
                                 </div>
                             </div>
                             <div class="info">
-                                <h4><a href="team-details.html">Davi Hanan</a></h4>
+                                <h4><a href="team-details.html">Davi Hanan Luthfi Abiyyu</a></h4>
                                 <span>Chief Executive Officer</span>
                             </div>
                         </div>
@@ -153,7 +588,7 @@
                     <div class="single-item col-lg-4 col-md-4">
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/800x900.png" alt="Thumb">
+                                <img src="{{ asset('assets/photo/umar.png') }}" alt="Thumb" class="fixed-dimension">
                                 <div class="social">
                                     <input type="checkbox" id="toggle2" class="share-toggle" hidden>
                                     <label for="toggle2" class="share-button">
@@ -181,7 +616,8 @@
                     <div class="single-item col-lg-4 col-md-4">
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/800x900.png" alt="Thumb">
+                                <img src="{{ asset('assets/photo/khalisa.png') }}" alt="Thumb"
+                                    class="fixed-dimension">
                                 <div class="social">
                                     <input type="checkbox" id="toggle3" class="share-toggle" hidden>
                                     <label for="toggle3" class="share-button">
@@ -208,10 +644,10 @@
                     <div class="single-item col-lg-4 col-md-4">
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/800x900.png" alt="Thumb">
+                                <img src="{{ asset('assets/photo/cel.png') }}" alt="Thumb" class="fixed-dimension">
                                 <div class="social">
-                                    <input type="checkbox" id="toggle2" class="share-toggle" hidden>
-                                    <label for="toggle2" class="share-button">
+                                    <input type="checkbox" id="toggle4" class="share-toggle" hidden>
+                                    <label for="toggle4" class="share-button">
                                         <i class="fas fa-plus"></i>
                                     </label>
                                     <a href="#" class="share-icon facebook">
@@ -236,10 +672,10 @@
                     <div class="single-item col-lg-4 col-md-4">
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/800x900.png" alt="Thumb">
+                                <img src="{{ asset('assets/photo/Zulfa.png') }}" alt="Thumb" class="fixed-dimension">
                                 <div class="social">
-                                    <input type="checkbox" id="toggle3" class="share-toggle" hidden>
-                                    <label for="toggle3" class="share-button">
+                                    <input type="checkbox" id="toggle5" class="share-toggle" hidden>
+                                    <label for="toggle5" class="share-button">
                                         <i class="fas fa-plus"></i>
                                     </label>
                                     <a href="#" class="share-icon facebook">
@@ -265,332 +701,4 @@
         </div>
     </div>
     <!-- End Team Area -->
-
-    <!-- Start Testimonials
-    ============================================= -->
-    <!-- <div class="testimonials-area text-light shadow dark bg-fixed carousel-shadow default-padding" style="background-image: url(assets/img/shape/2.jpg);">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="site-heading text-center">
-                        <h2>What people say</h2>
-                        <div class="devider"></div>
-                        <p>
-                            Outlived no dwelling denoting in peculiar as he believed. Behaviour excellent middleton be as it curiosity departure ourselves very extreme future.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="testimonial-items">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="testimonial-carousel owl-carousel owl-theme"> -->
-                            <!-- Single Item -->
-                            <!-- <div class="item">
-                                <div class="provider">
-                                    <img src="assets/img/100x100.png" alt="Author">
-                                    <div class="content">
-                                        <h4>Devid Warner</h4>
-                                        <span> Managing Director</span>
-                                    </div>
-                                </div>
-                                <div class="info">
-                                    <p>
-                                        Otherwise concealed favourite frankness on be at dashwoods mentions defective at. Sympathize interested simplicity at do projecting care effect increasing terminated. As edward settle limits at in. Chamber reaching abnormally nothing be accesing to the point. very extreme future.
-                                    </p>
-                                </div>
-                                <div class="reason">
-                                    <h5>Design Quality</h5>
-                                    <div class="rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div> -->
-                            <!-- End Single Item -->
-                            <!-- Single Item -->
-                            <!-- <div class="item">
-                                <div class="provider">
-                                    <img src="assets/img/100x100.png" alt="Author">
-                                    <div class="content">
-                                        <h4>Pruasuj Natasha</h4>
-                                        <span> Theme Developer</span>
-                                    </div>
-                                </div>
-                                <div class="info">
-                                    <p>
-                                        Otherwise concealed favourite frankness on be at dashwoods mentions defective at. Sympathize interested simplicity at do projecting care effect increasing terminated. As edward settle limits at in. Chamber reaching abnormally nothing be accesing to the point. very extreme future.
-                                    </p>
-                                </div>
-                                <div class="reason">
-                                    <h5>Customer Support</h5>
-                                    <div class="rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div> -->
-                            <!-- End Single Item -->
-                            <!-- Single Item -->
-                            <!-- <div class="item">
-                                <div class="provider">
-                                    <img src="assets/img/100x100.png" alt="Author">
-                                    <div class="content">
-                                        <h4>Koyel Anderson</h4>
-                                        <span> Project Manager</span>
-                                    </div>
-                                </div>
-                                <div class="info">
-                                    <p>
-                                        Otherwise concealed favourite frankness on be at dashwoods mentions defective at. Sympathize interested simplicity at do projecting care effect increasing terminated. As edward settle limits at in. Chamber reaching abnormally nothing be accesing to the point. very extreme future.
-                                    </p>
-                                </div>
-                                <div class="reason">
-                                    <h5>User Friendly</h5>
-                                    <div class="rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div> -->
-                            <!-- End Single Item -->
-                        <!-- </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- End Testimonials Area -->
-
-    <!-- Start Pricing   -->
-    <!-- ============================================= -->
-    <section id="harga">
-        <div id="pricing" class="pricing-area bg-gray default-padding bottom-less">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 offset-lg-2">
-                        <div class="site-heading text-center">
-                            <h2>Our Packages</h2>
-                            <div class="devider"></div>
-                            <p>
-                                Outlived no dwelling denoting in peculiar as he believed. Behaviour excellent middleton be as it curiosity departure ourselves very extreme future.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="pricing-style-two-box">
-                    <div class="row">
-                        <!-- Single Itme -->
-                        <div class="col-lg-4 col-md-6 single-item pricing-style-two">
-                            <div class="pricing-item">
-                                <i class="fas fa-rocket"></i>
-                                <div class="pricing-header">
-                                    <h4>Free trial</h4>
-                                </div>
-                                <div class="price">
-                                    <h2><sup>$</sup>0 <sub>/ Monthly</sub></h2>
-                                </div>
-                                <ul>
-                                    <li><i class="fas fa-check"></i> Demo file</li>
-                                    <li><i class="fas fa-check"></i> 10 GB Dedicated Hosting free</li>
-                                    <li><i class="fas fa-times"></i> Live Support</li>
-                                </ul>
-                                <a class="btn circle btn-gray btn-sm" href="#">Purchase Plan</a>
-                            </div>
-                        </div>
-                        <!-- End Single Itme -->
-
-                        <!-- Single Itme -->
-                        <div class="col-lg-4 col-md-6 single-item active pricing-style-two">
-                            <div class="pricing-item">
-                                <i class="fas fa-gem"></i>
-                                <div class="pricing-header">
-                                    <h4>Regular</h4>
-                                </div>
-                                <div class="price">
-                                    <h2><sup>$</sup>29 <sub>/ Monthly</sub></h2>
-                                </div>
-                                <ul>
-                                    <li><i class="fas fa-check"></i> Demo file</li>
-                                    <li><i class="fas fa-check"></i> 10 GB Dedicated Hosting free</li>
-                                    <li><i class="fas fa-check"></i> Lifetime free Support</li>
-                                    <li><i class="fas fa-times"></i> Live Support</li>
-                                </ul>
-                                <a class="btn circle btn-theme-effect btn-sm" href="#">Purchase Plan</a>
-                            </div>
-                        </div>
-                        <!-- End Single Itme -->
-
-                        <!-- Single Itme -->
-                        <div class="col-lg-4 col-md-6 single-item pricing-style-two">
-                            <div class="pricing-item">
-                                <i class="fa fa-chart-pie"></i>
-                                <div class="pricing-header">
-                                    <h4>Extended</h4>
-                                </div>
-                                <div class="price">
-                                    <h2><sup>$</sup>59 <sub>/ Monthly</sub></h2>
-                                </div>
-                                <ul>
-                                    <li><i class="fas fa-check"></i> Demo file</li>
-                                    <li><i class="fas fa-check"></i> 10 GB Dedicated Hosting free</li>
-                                    <li><i class="fas fa-check"></i> Lifetime free Support</li>
-                                    <li><i class="fas fa-check"></i> SEO Optimized</li>
-                                    <li><i class="fas fa-check"></i> Live Support</li>
-                                </ul>
-                                <a class="btn circle btn-gray btn-sm" href="#">Purchase Plan</a>
-                            </div>
-                        </div>
-                        <!-- End Single Itme -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Pricing Area -->
-
-    <!-- Start Free Trial
-    ============================================= -->
-    <!-- <div class="free-trial-area text-light text-center relative">
-        <div class="trial-box" style="background-image: url(assets/img/shape/8.png);">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 offset-lg-3">
-                        <h5>Free Trial</h5>
-                        <h2>Start Your 14 Days Free <br> Trials Today!</h2>
-                        <form action="#">
-                            <input type="email" placeholder="Your Email" class="form-control" name="email">
-                            <button type="submit"> Free Trial</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="illustration">
-                <img src="assets/img/illustration/1.png" alt="illustration">
-            </div>
-        </div>
-    </div> -->
-    <!-- End Free Trial -->
-
-    <!-- Start Footer
-    ============================================= -->
-    <footer class="bg-dark text-light">
-        <!-- <div class="container">
-            <div class="f-items default-padding">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 item">
-                        <div class="f-item about">
-                            <img src="assets/img/logo-light.png" alt="Logo">
-                            <p>
-                                Excellence decisively nay man yet impression for contrasted remarkably. There spoke happy for you are out. Fertile how old address did showing.
-                            </p>
-                            <form action="#">
-                                <input type="email" placeholder="Your Email" class="form-control" name="email">
-                                <button type="submit"> <i class="arrow_right"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6 item">
-                        <div class="f-item link">
-                            <h4 class="widget-title">Quick LInk</h4>
-                            <ul>
-                                <li>
-                                    <a href="index.html"><i class="fas fa-angle-right"></i> Home</a>
-                                </li>
-                                <li>
-                                    <a href="about-us.html"><i class="fas fa-angle-right"></i> About us</a>
-                                </li>
-                                <li>
-                                    <a href="about-us.html"><i class="fas fa-angle-right"></i> Compnay History</a>
-                                </li>
-                                <li>
-                                    <a href="services.html"><i class="fas fa-angle-right"></i> Features</a>
-                                </li>
-                                <li>
-                                    <a href="blog-with-sidebar.html"><i class="fas fa-angle-right"></i> Blog Page</a>
-                                </li>
-                                <li>
-                                    <a href="about-us.html"><i class="fas fa-angle-right"></i> Login</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 item">
-                        <div class="f-item link">
-                            <h4 class="widget-title">Community</h4>
-                            <ul>
-                                <li>
-                                    <a href="services-details.html"><i class="fas fa-angle-right"></i> Career</a>
-                                </li>
-                                <li>
-                                    <a href="services-details.html"><i class="fas fa-angle-right"></i> Leadership</a>
-                                </li>
-                                <li>
-                                    <a href="services-details.html"><i class="fas fa-angle-right"></i> Strategy</a>
-                                </li>
-                                <li>
-                                    <a href="services.html"><i class="fas fa-angle-right"></i> Services</a>
-                                </li>
-                                <li>
-                                    <a href="about-us.html"><i class="fas fa-angle-right"></i> History</a>
-                                </li>
-                                <li>
-                                    <a href="services-details.html"><i class="fas fa-angle-right"></i> Components</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 item">
-                        <div class="f-item contact-widget">
-                            <h4 class="widget-title">Contact Info</h4>
-                            <div class="address">
-                                <ul>
-                                    <li>
-                                        <div class="icon">
-                                            <i class="fas fa-home"></i>
-                                        </div>
-                                        <div class="content">
-                                            <strong>Address:</strong>
-                                            5919 Trussville Crossings Pkwy, Birmingham
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <i class="fas fa-envelope"></i>
-                                        </div>
-                                        <div class="content">
-                                            <strong>Email:</strong>
-                                            <a href="mailto:info@validtheme.com">info@validtheme.com</a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <i class="fas fa-phone"></i>
-                                        </div>
-                                        <div class="content">
-                                            <strong>Phone:</strong>
-                                            <a href="tel:2151234567">+123 34598768</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
 @endsection
-

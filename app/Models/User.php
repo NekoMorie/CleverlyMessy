@@ -32,6 +32,7 @@ class User extends Authenticatable
         'telp',
         'alamat',
         'fcm_token',
+        'last_login',
     ];
     public function classname()
     {

@@ -10,6 +10,7 @@
         "kennedy-osaze/laravel-api-response": "^2.0",
         "laravel/framework": "^10.0",
         "laravel/sanctum": "^3.3",
+        "laravel/socialite": "^5.16",
         "laravel/tinker": "^2.8",
         "realrashid/sweet-alert": "^7.2"
     },

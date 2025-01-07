@@ -4567,7 +4567,8 @@ ul.achivement li .medium {
 	position: absolute;
 	right: 50px;
 	top: 20px;
-	content: "\f10d";
+	/* content: "\f10d";
+	 */
 	font-family: "Font Awesome 5 Pro";
 	color: var(--white);
 	font-size: 150px;
@@ -4648,7 +4649,7 @@ ul.achivement li .medium {
 }
 
 .pricing-item .price h2 {
-	font-size: 60px;
+	font-size: 45px;
 	font-weight: 900;
 	margin-bottom: 20px;
 }
@@ -5148,8 +5149,8 @@ ul.achivement li .medium {
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
-	content: "\f07b";
-	font-family: "Font Awesome 5 Pro";
+	/* content: "\f07b";
+	font-family: "Font Awesome 5 Pro"; */
 	height: 8px;
 	left: 0;
 	position: absolute;
@@ -5936,7 +5937,7 @@ footer .f-items .f-item.about {
 }
 
 footer .f-items .f-item.about img {
-	height: 60px;
+	height: 110px;
 }
 
 footer .f-items .f-item.link li {

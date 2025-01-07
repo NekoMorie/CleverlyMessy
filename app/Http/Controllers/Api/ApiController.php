@@ -9,46 +9,46 @@ use App\Models\Absen;
 
 class ApiController extends Controller
 {
-        protected function login(Request $request)
-        {
-            $loginData = $request->validate([
-                'email' => 'required|email',
-                'password' => 'required',
-            ]);
-            // Cek kredensial
-            if (Auth::attempt($request->only('email', 'password'))) {
-                $user = Auth::user();
+    protected function login(Request $request)
+    {
+        $loginData = $request->validate([
+            'email' => 'required|email',
+            'password' => 'required',
+        ]);
+        // \dd($loginData);
+        // Cek kredensial
+        if (Auth::attempt($request->only('email', 'password'))) {
+            $user = Auth::user();
 
-                // Update FCM Token jika ada
-                if ($request->filled('fcm_token')) {
-                    $user->update(['fcm_token' => $request->fcm_token]);
-                }
-                $baseUrl = config('app.url');
-                $imagePath = $user->image;
-                $imageUrl = $imagePath ? $baseUrl . '/storage/' . $imagePath : $baseUrl . '/storage/pp/foto_default.jpg';
-                // Buat token
-                $token = $user->createToken('auth_token')->plainTextToken;
-
-                return response()->json([
-                    'message' => 'Login berhasil!',
-                    'data' => [
-                        'id' => $user->id,
-                        'name' => $user->name,
-                        'email' => $user->email,
-                        'kelas' => $user->classnames_id,
-                        'nis' => $user->nis,
-                        'image' => $imageUrl,
-                        // Tambahkan data lain yang relevan di sini
-                    ],
-                    'token' => $token,
-                ], 200);
-            }else{
-                return response()->json([
-                'message' => 'Email atau password salah!',
-                ], 401);
+            // Update FCM Token jika ada
+            if ($request->filled('fcm_token')) {
+                $user->update(['fcm_token' => $request->fcm_token]);
             }
+            $baseUrl = config('app.url');
+            $imagePath = $user->image;
+            $imageUrl = $imagePath ? $baseUrl . '/storage/' . $imagePath : $baseUrl . '/storage/pp/foto_default.jpg';
+            // Buat token
+            $token = $user->createToken('auth_token')->plainTextToken;
 
+            return response()->json([
+                'message' => 'Login berhasil!',
+                'data' => [
+                    'id' => $user->id,
+                    'name' => $user->name,
+                    'email' => $user->email,
+                    'kelas' => $user->classnames_id,
+                    'nis' => $user->nis,
+                    'image' => $imageUrl,
+                    // Tambahkan data lain yang relevan di sini
+                ],
+                'token' => $token,
+            ], 200);
+        } else {
+            return response()->json([
+                'message' => 'Email atau password salah!',
+            ], 401);
         }
+    }
 
     public function register(Request $request)
     {
@@ -76,14 +76,16 @@ class ApiController extends Controller
     }
 
 
-    public function logout(){
+    public function logout()
+    {
         auth()->user()->tokens()->delete();
         return response()->json([
-           'message' => 'Logout berhasil!'
+            'message' => 'Logout berhasil!'
         ], 200);
     }
 
-    public function absen($id){
+    public function absen($id)
+    {
         $data = Absen::where('users_id', $id)->orderBy('created_at', 'desc')->get();
         $absens = $data->map(function ($data) {
             return [
@@ -99,9 +101,5 @@ class ApiController extends Controller
         ], 200);
     }
 
-    public function users($id)
-    {
-
-    }
-
+    public function users($id) {}
 }

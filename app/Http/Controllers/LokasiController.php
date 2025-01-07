@@ -4,10 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Models\Location;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class LokasiController extends Controller
 {
-    public function index(Request $request){
+    public function index(Request $request)
+    {
         $title = 'Lokasi';
         $no = 1;
         $data = Location::orderBy('nama_lokasi', 'ASC');
@@ -18,11 +20,12 @@ class LokasiController extends Controller
             $data = $data->where('nama_lokasi', 'LIKE', '%' . $searchTerm . '%');
         }
 
-        // Get paginated results or full list if no pagination is desired
+        $user = Auth::guard('admin')->user();
         $lokasi = $data->get();
-        return view('admin/lokasi', compact('title', 'lokasi', 'no'));
+        return view('admin/lokasi', compact('title', 'lokasi', 'no', 'user'));
     }
-    public function store(Request $request){
+    public function store(Request $request)
+    {
         $lokasi = new Location();
         $lokasi->nama_lokasi = $request->nama_lokasi;
         $lokasi->lat_lokasi = $request->lat_lokasi;
@@ -32,7 +35,8 @@ class LokasiController extends Controller
 
         return redirect()->back()->with('success', 'User berhasil ditambahkan.');
     }
-    public function hapus($id){
+    public function hapus($id)
+    {
         $lokasi = Location::findOrFail($id);
         $lokasi->delete();
 

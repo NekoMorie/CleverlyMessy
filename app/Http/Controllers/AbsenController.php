@@ -5,12 +5,15 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use App\Models\Absen;
+use Illuminate\Support\Facades\Auth;
 
 class AbsenController extends Controller
 {
-    public function index(){
+    public function index()
+    {
+        $user = Auth::guard('admin')->user();
         $title = 'Absensi';
-        return view('admin/absen', compact('title'));
+        return view('admin/absen', compact('title', 'user'));
     }
 
     public function store(Request $request)

@@ -10,7 +10,7 @@ class LoginController extends Controller
 {
     public function LoginForm()
     {
-        return view('auth/login', [
+        return view('auth/signin', [
             'title' => 'Login',
         ]);
     }
@@ -32,5 +32,4 @@ class LoginController extends Controller
             'email' => 'Email atau password salah.',
         ])->onlyInput('email');
     }
-
 }

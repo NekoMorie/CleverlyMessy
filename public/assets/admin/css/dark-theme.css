@@ -53,9 +53,9 @@ html.dark-theme .sidebar-wrapper .metismenu .mm-active>a, html.dark-theme .sideb
 }
 
 
-html.dark-theme .sidebar-wrapper .sidebar-header img {
+/* html.dark-theme .sidebar-wrapper .sidebar-header img {
     filter: invert(1) grayscale(100%) brightness(200%);
-}
+} */
 
 html.dark-theme .sidebar-wrapper .simplebar-scrollbar:before {
 	background: rgba(255, 255, 255, .4)

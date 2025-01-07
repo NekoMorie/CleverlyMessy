@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
+
 class ApiUserController extends Controller
 {
     public function getSelected($id)
@@ -57,8 +58,8 @@ class ApiUserController extends Controller
         $user = User::findOrFail($id);
         Storage::disk('public')->delete($user->image);
         $folderName = 'userImg';
-        $imageName = Str::random(32). "." .$request->image->getClientOriginalExtension();
-        $filePath = $folderName .'/' . $imageName;
+        $imageName = Str::random(32) . "." . $request->image->getClientOriginalExtension();
+        $filePath = $folderName . '/' . $imageName;
         Storage::disk('public')->put($filePath, file_get_contents($request->image));
 
         $user->image = $filePath;
@@ -69,7 +70,8 @@ class ApiUserController extends Controller
         ], 200);
     }
 
-    public function getTime($id){
+    public function getTime($id)
+    {
         $user = User::findOrFail($id);
         return response()->json([
             'data' => [
@@ -81,7 +83,8 @@ class ApiUserController extends Controller
         ], 200);
     }
 
-    public function getLocation($id){
+    public function getLocation($id)
+    {
         $user = User::findOrFail($id);
         return response()->json([
             'data' => [

@@ -1,0 +1,148 @@
+.seksi-paket {
+    padding: 40px 0;
+  }
+
+  .seksi-paket h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #333;
+  }
+
+  .kartu-harga {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .kartu-harga__item {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: left;
+    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .kartu-harga__item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(66, 133, 244, 0.1);
+    border-color: #4285f4;
+  }
+
+  .kartu-harga__judul {
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+  }
+
+  .kartu-harga__ikon {
+    font-size: 22px;
+    padding: 8px;
+    border-radius: 10px;
+    background: rgba(66, 133, 244, 0.1);
+  }
+
+  .kartu-harga__ikon--silver,
+  .kartu-harga__ikon--basic,
+  .kartu-harga__ikon--gratis {
+    color: #4285f4;
+  }
+
+  .kartu-harga__nominal {
+    font-size: 42px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
+    line-height: 1;
+  }
+
+  .kartu-harga__periode {
+    font-size: 14px;
+    color: #666;
+    display: block;
+    margin-top: 8px;
+    font-weight: 400;
+  }
+
+  .kartu-harga__fitur-list {
+    margin: 30px 0;
+    list-style: none;
+    padding: 0;
+  }
+
+  .kartu-harga__fitur-item {
+    margin: 16px 0;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+  }
+
+  .kartu-harga__fitur-ikon {
+    color: #4285f4;
+    font-size: 18px;
+    flex-shrink: 0;
+    background: rgba(66, 133, 244, 0.1);
+    padding: 4px;
+    border-radius: 50%;
+  }
+
+  .kartu-harga__tombol {
+    background: #4285f4;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    font-size: 15px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .kartu-harga__tombol:hover {
+    background: #2b6cd4;
+    transform: scale(1.02);
+  }
+
+  .kartu-harga__tombol-ikon {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+  }
+
+  .kartu-harga_tombol:hover .kartu-harga_tombol-ikon {
+    transform: translateX(4px);
+  }
+
+  /* Label Populer untuk paket Silver */
+  .kartu-harga__item--unggulan {
+    border: 2px solid #4285f4;
+  }
+
+  .kartu-harga__item--unggulan::before {
+    content: "Populer";
+    position: absolute;
+    top: 12px;
+    right: -30px;
+    background: #4285f4;
+    color: white;
+    padding: 4px 35px;
+    font-size: 12px;
+    transform: rotate(45deg);
+    font-weight: 500;
+  }
