@@ -103,4 +103,10 @@ class HomeController extends Controller
         $paket = Paket::with('paketInfo')->orderBy('harga', 'ASC')->get();
         return view('profile/beli', \compact('title', 'user', 'paket'));
     }
+    public function faq(Request $request)
+    {
+        $user = Auth::guard('admin')->user();
+        $title = 'Harga';
+        return view('profile/faq', \compact('title', 'user'));
+    }
 }

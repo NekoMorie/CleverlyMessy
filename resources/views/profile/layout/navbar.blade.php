@@ -53,7 +53,7 @@
                     <a href="/contact" class="dropdown-toggle" data-toggle="dropdown">Kontak</a>
                 </li>
                 <li>
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ</a>
+                    <a href="{{ route('faq') }}" class="dropdown-toggle" data-toggle="dropdown">FAQ</a>
                 </li>
                 @if (!$user)
                     <li>

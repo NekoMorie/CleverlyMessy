@@ -19,7 +19,7 @@
     <!-- End Breadcrumb --> --}}
 
     <!-- Star About Area
-        ============================================= -->
+            ============================================= -->
     <div id="about" class="about-area bg-gray default-padding">
         <!-- Shape -->
         <div class="fixed-shape-left">
@@ -68,7 +68,7 @@
     <!-- End About Area -->
 
     <!-- Start Fun Factor Area
-        ============================================= -->
+            ============================================= -->
     <div class="fun-factor-area relative text-light">
         <div class="half-bg-top-gray"></div>
         <div class="container">
@@ -105,7 +105,7 @@
     <!-- End Fun Factor Area -->
 
     <!-- Start Team
-        ============================================= -->
+            ============================================= -->
     <div id="team" class="team-area default-padding bottom-less">
         <div class="container">
             <div class="row">
@@ -215,7 +215,7 @@
     <!-- End Team Area -->
 
     <!-- Start Choose Us Area
-        ============================================= -->
+            ============================================= -->
     <div class="choose-us-area default-padding bg-gray">
         <div class="container">
             <div class="row align-center">

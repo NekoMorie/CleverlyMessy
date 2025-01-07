@@ -24,6 +24,8 @@ Route::get('/blog', [Controllers\HomeController::class, 'blog'])->name('blog');
 Route::get('/blog/{slug}', [Controllers\HomeController::class, 'blogDetail'])->name('blog.detail');
 Route::get('/harga', [Controllers\HomeController::class, 'harga'])->name('harga');
 Route::get('/beli', [Controllers\HomeController::class, 'beli'])->name('beli');
+Route::get('/faq', [Controllers\HomeController::class, 'faq'])->name('faq');
+
 
 
 
